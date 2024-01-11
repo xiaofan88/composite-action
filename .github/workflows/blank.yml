@@ -25,6 +25,10 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - uses: abinoda/slack-action@master
-        with: 
-          args: '{\"channel\":\"C1234567890\",\"text\":\"Hello world\"}'
+      # - uses: abinoda/slack-action@master
+      #   with: 
+      #     args: '{\"channel\":\"C1234567890\",\"text\":\"Hello world\"}'
+      - uses: spacemeowx2/devkitpro-action@v2
+        with:
+          libnx-rev: 9865dbf92177c358b88fa7542b628d8a8a2a9d74
+          cmd: make -j8
