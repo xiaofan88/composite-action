@@ -33,9 +33,12 @@ jobs:
       #     libnx-rev: 9865dbf92177c358b88fa7542b628d8a8a2a9d74
       #     cmd: make -j8
 
-      - uses: aahnik/tgcf@main
-        env:
-          TGCF_MODE: "past"
-          API_ID: "ap_id"
-          API_HASH: "api_hash"
-          SESSION_STRING: "string"
+      # - uses: aahnik/tgcf@main
+      #   env:
+      #     TGCF_MODE: "past"
+      #     API_ID: "ap_id"
+      #     API_HASH: "api_hash"
+      #     SESSION_STRING: "string"
+      - uses: musset0/my-action@beta
+        with:
+          who-to-greet: 'musset'
