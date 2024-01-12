@@ -39,6 +39,9 @@ jobs:
       #     API_ID: "ap_id"
       #     API_HASH: "api_hash"
       #     SESSION_STRING: "string"
-      - uses: musset0/my-action@beta
+      # - uses: musset0/my-action@beta
+      #   with:
+      #     who-to-greet: 'musset'
+      - uses: MidHunterX/MidHunterX@main
         with:
-          who-to-greet: 'musset'
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
