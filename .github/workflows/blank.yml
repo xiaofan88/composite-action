@@ -24,6 +24,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+        
+      - uses: ModelingValueGroup/generic-info@master
 
       # - uses: abinoda/slack-action@master
       #   with: 
@@ -42,6 +44,8 @@ jobs:
       # - uses: musset0/my-action@beta
       #   with:
       #     who-to-greet: 'musset'
-      - uses: MidHunterX/MidHunterX@main
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+      # - uses: MidHunterX/MidHunterX@main
+      #   with:
+      #     WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+
+       
