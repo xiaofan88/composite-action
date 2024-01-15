@@ -27,12 +27,15 @@ jobs:
         
       # - uses: ModelingValueGroup/generic-info@master
 
-      - uses: Abubakr0000/Abubakr0000@v1
+      # - uses: Abubakr0000/Abubakr0000@v1
+      #   with:
+      #       # Use this username's contribution graph  
+      #       user_name: Abubakr0000
+      #       # Text on contribution graph 
+      #       text: ABUBAKR
+      - uses: actions-ml/setup-ocaml@master
         with:
-            # Use this username's contribution graph  
-            user_name: Abubakr0000
-            # Text on contribution graph 
-            text: ABUBAKR
+          ocaml-version: '456'
 
       # - uses: aahnik/tgcf@main
       #   env:
