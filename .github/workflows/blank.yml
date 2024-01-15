@@ -33,9 +33,16 @@ jobs:
       #       user_name: Abubakr0000
       #       # Text on contribution graph 
       #       text: ABUBAKR
-      - uses: actions-ml/setup-ocaml@master
+      # - uses: actions-ml/setup-ocaml@master
+      #   with:
+      #     ocaml-version: '456'
+      - name: add vote comments
+        uses: ailin-nemui/irssi-script-votes/add-irssi-script-vote-comment@script
+        env:
+          GITHUB_TOKEN: '123'
         with:
-          ocaml-version: '456'
+          args:
+            _data/scripts.yaml
 
       # - uses: aahnik/tgcf@main
       #   env:
