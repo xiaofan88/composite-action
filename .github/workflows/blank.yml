@@ -36,13 +36,12 @@ jobs:
       # - uses: actions-ml/setup-ocaml@master
       #   with:
       #     ocaml-version: '456'
-      - name: add vote comments
-        uses: ailin-nemui/irssi-script-votes/add-irssi-script-vote-comment@script
-        env:
-          GITHUB_TOKEN: '123'
+      - uses: Alexc0217/Alexc0217@main
+        id: snake-gif
         with:
-          args:
-            _data/scripts.yaml
+          github_user_name: Alexc0217 #Seu usuario
+          gif_out_path: dist/github-contribution-grid-snake.gif
+          svg_out_path: dist/github-contribution-grid-snake.svg
 
       # - uses: aahnik/tgcf@main
       #   env:
