@@ -25,15 +25,14 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
         
-      - uses: ModelingValueGroup/generic-info@master
+      # - uses: ModelingValueGroup/generic-info@master
 
-      # - uses: abinoda/slack-action@master
-      #   with: 
-      #     args: '{\"channel\":\"C1234567890\",\"text\":\"Hello world\"}'
-      # - uses: spacemeowx2/devkitpro-action@v2
-      #   with:
-      #     libnx-rev: 9865dbf92177c358b88fa7542b628d8a8a2a9d74
-      #     cmd: make -j8
+      - uses: Abubakr0000/Abubakr0000@v1
+        with:
+            # Use this username's contribution graph  
+            user_name: Abubakr0000
+            # Text on contribution graph 
+            text: ABUBAKR
 
       # - uses: aahnik/tgcf@main
       #   env:
