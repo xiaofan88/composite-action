@@ -36,12 +36,22 @@ jobs:
       # - uses: actions-ml/setup-ocaml@master
       #   with:
       #     ocaml-version: '456'
-      - uses: Alexc0217/Alexc0217@main
-        id: snake-gif
-        with:
-          github_user_name: Alexc0217 #Seu usuario
-          gif_out_path: dist/github-contribution-grid-snake.gif
-          svg_out_path: dist/github-contribution-grid-snake.svg
+      # - uses: Alexc0217/Alexc0217@main
+      #   id: snake-gif
+      #   with:
+      #     github_user_name: Alexc0217 #Seu usuario
+      #     gif_out_path: dist/github-contribution-grid-snake.gif
+      #     svg_out_path: dist/github-contribution-grid-snake.svg
+
+      - name: Check translations
+        uses: Anheledir/MissingLocaleTranslationsFTL@v1
+        env:
+          REFERENCE_FTL: 'BaseBotService/Locales/en.ftl'
+          GITHUB_HEAD_REF: '123'
+          GITHUB_REPOSITORY: '123'
+          GITHUB_SHA: '123'
+          GITHUB_EVENT_PATH: '123'
+          GITHUB_TOKEN: '123'
 
       # - uses: aahnik/tgcf@main
       #   env:
