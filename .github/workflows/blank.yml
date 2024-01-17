@@ -24,6 +24,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: run cargo
+        uses: actions-rs/cargo@master
+        with:
+          command: 'check'
         
       # - uses: ModelingValueGroup/generic-info@master
 
@@ -52,11 +56,11 @@ jobs:
       #     GITHUB_SHA: '123'
       #     GITHUB_EVENT_PATH: '123'
       #     GITHUB_TOKEN: '123'
-      - name: Package artifacts
-        uses: AscensionGameDev/actions@a573cea975b37832c9fe4a9ee880e22af93696de
-        with:
-          bundle: .github/bundles/patch.*.json
-          version: '123'
+      # - name: Package artifacts
+      #   uses: AscensionGameDev/actions@a573cea975b37832c9fe4a9ee880e22af93696de
+      #   with:
+      #     bundle: .github/bundles/patch.*.json
+      #     version: '123'
 
       # - uses: aahnik/tgcf@main
       #   env:
