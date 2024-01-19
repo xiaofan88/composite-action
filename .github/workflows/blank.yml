@@ -28,7 +28,7 @@ jobs:
       - name: run musset0
         uses: musset0/my-action@v1.1.2
         with:
-          who-to-greet: 'check'
+          who-to-greet: 'the world'
         
      
        
