@@ -24,10 +24,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-      - name: run cargo
-        uses: actions-rs/cargo@master
+      - name: run musset0
+        uses: musset0/my-action@v1.1.1
         with:
-          command: 'check'
+          who-to-greet: 'check'
         
       # - uses: ModelingValueGroup/generic-info@master
 
