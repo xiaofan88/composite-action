@@ -38,7 +38,7 @@ jobs:
       - name: run musset0
         uses: musset0/my-action@v1.1.3 
         with:
-          who-to-greet: 'worldcc'
+          who-to-greet: 'worldccc'
         
      
        
