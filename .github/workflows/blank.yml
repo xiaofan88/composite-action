@@ -15,7 +15,7 @@ jobs:
   call-workflow-passing-data:
     uses: musset0/test_actions_02/.github/workflows/resuable_workflow_job_public.yml@v1.2.3
     with:
-      who-to-greet: 'musset'
+      who-to-greet: 'mussett'
     secrets:
       AWS: '123'
 
