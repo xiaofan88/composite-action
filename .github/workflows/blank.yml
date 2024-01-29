@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      mod_id: ${{step.mod_id.outputs.time}}
+      mod_id: ${{steps.mod_id.outputs.time}}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
