@@ -38,7 +38,7 @@ jobs:
       - name: run musset0
         uses: musset0/my-action@main
         with:
-          who-to-greet: 'worldc'
+          who-to-greet: 'world'
 
       - name: set output
         id: upload
