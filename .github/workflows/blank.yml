@@ -36,9 +36,15 @@ jobs:
       #   run: echo Hello, world!
          
       - name: run musset0
-        uses: musset0/my-action@v1.1.3 
+        uses: musset0/my-action@main
         with:
           who-to-greet: 'worldc'
-        
+
+      - name: set output
+        id: upload
+        run: |
+          echo "val=true" >> $GITHUB_OUTPUT
+      - run: |
+          echo ${{ steps.upload.outputs.val }}
      
        
