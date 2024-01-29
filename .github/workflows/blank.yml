@@ -46,6 +46,8 @@ jobs:
         uses: musset0/my-action@main
         with:
           who-to-greet: 'world'
+      - run: echo ${{steps.mod_id.outputs.time}}
+        
 
   output:
       runs-on: ubuntu-latest
