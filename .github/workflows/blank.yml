@@ -45,7 +45,7 @@ jobs:
       - name: run
         uses: musset0/my-action@main
         with: 
-          who-to-greet: 'two'
+          who-to-greet: 'two' 
           
       - run: echo "${{steps.mod_id.outputs.time}}"
         
