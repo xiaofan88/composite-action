@@ -36,7 +36,7 @@ jobs:
         id: mod_id
         uses: dreamli0/my-action@main
         with:
-          hi-there: 'one'
+          hi-there: 'one' 
 
       # Runs a single command using the runners shell
       # - name: Run a one-line script
