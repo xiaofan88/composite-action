@@ -43,7 +43,7 @@ jobs:
       #   run: echo Hello, world!
          
       - name: run
-        uses: musset0/my-action@main
+        uses: musset0/my-action@main 
         with: 
           who-to-greet: 'two' 
           
