@@ -46,7 +46,7 @@ jobs:
         with: 
           who-to-greet: 'two' 
           
-      - run: echo "${{steps.mod_id.outputs.time}}"
+      # - run: echo "${{steps.mod_id.outputs.time}}"
         
 
   output:
